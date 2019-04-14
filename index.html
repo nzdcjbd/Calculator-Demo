@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator Demo</title>
+</head>
+
+<body>
+	<div class="calculator">
+		<div class="showing">
+			<small class="calc">1+2</small>
+			<p class="ans">3</p>
+		</div>
+
+		<div class="number">
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>0</button>
+			<button>.</button>
+			<button id="enter">=</button>
+		</div>
+
+		<div class="operator">
+			<button>+</button>
+			<button>-</button>
+			<button>*</button>
+			<button>/</button>
+		</div>
+	</div>
+
+	<style>
+
+		/* reset */
+		html, body {
+			font-size: 16px;
+		}
+
+		.calculator {
+			width: fit-content;
+		}
+
+
+		/* button */
+		button {
+			width: 4rem;
+			height: 3rem;
+			margin: .2rem;
+			background-color: #eee;
+			border: none;
+			outline: none;
+		}
+
+		button:hover{
+			box-shadow: 1px 1px 2px #aaa;
+		}
+
+		.operator button {
+			background-color: #d7e6f7;
+		}
+
+		#enter {
+			background-color: #f9d3d3;
+		}
+
+
+		/* layout */
+		.showing {
+			border: 1px solid #999;
+			padding: .5rem;
+			margin: 1rem .2rem;
+			text-align: right;
+		}
+		
+		.showing p.ans {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+
+		.number {
+			width: calc( 4rem * 3 + .2rem * 6 );
+			display: inline-flex;
+			flex-wrap: wrap;
+			vertical-align: top;
+		}
+
+		.operator {
+			width: calc( 4rem + .2rem * 2 );
+			display: inline-block;
+		}
+	</style>
+</body>
+
+</html>
