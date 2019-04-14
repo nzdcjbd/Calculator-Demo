@@ -42,36 +42,7 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-	<script>
-		var calc, ans;
-
-		function pushItem(key) {
-
-			calc += key;
-
-			// show
-			$('.ans')[0].innerHTML = calc;
-		}
-
-		function calcAns() {
-			ans = eval(calc);
-
-			// show
-			$('.ans')[0].innerHTML = ans;
-			$('.calc')[0].innerHTML = calc;
-
-			// prepare next calc
-			calc = ans;
-		}
-
-		(function reset() {
-			calc = "";
-			ans = 0;
-
-			$('.ans')[0].innerHTML = 0;
-			$('.calc')[0].innerHTML = "";
-		})();
-	</script>
+	<script src="./assets/js/script.js"></script>
 
 </body>
 
