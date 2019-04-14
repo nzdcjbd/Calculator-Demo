@@ -1,58 +1,58 @@
-
 /* reset */
-html, body {
-    font-size: 16px;
+html,
+body {
+	font-size: 16px;
 }
 
 .calculator {
-    width: fit-content;
+	width: fit-content;
 }
 
 
 /* component */
 button {
-    width: 4rem;
-    height: 3rem;
-    margin: .2rem;
-    background-color: #eee;
-    border: none;
-    outline: none;
+	width: 4rem;
+	height: 3rem;
+	margin: .2rem;
+	background-color: #eee;
+	border: none;
+	outline: none;
 }
 
-button:hover{
-    box-shadow: 1px 1px 2px #aaa;
+button:hover {
+	box-shadow: 1px 1px 2px #aaa;
 }
 
 .operator button {
-    background-color: #d7e6f7;
+	background-color: #d7e6f7;
 }
 
 #enter {
-    background-color: #f9d3d3;
+	background-color: #f9d3d3;
 }
 
 
 /* layout */
 .showing {
-    border: 1px solid #999;
-    padding: .5rem;
-    margin: 1rem .2rem;
-    text-align: right;
+	border: 1px solid #999;
+	padding: .5rem;
+	margin: 1rem .2rem;
+	text-align: right;
 }
 
 .showing p.ans {
-    margin: 0;
-    font-size: 1.5rem;
+	margin: 0;
+	font-size: 1.5rem;
 }
 
 .number {
-    width: calc( 4rem * 3 + .2rem * 6 );
-    display: inline-flex;
-    flex-wrap: wrap;
-    vertical-align: top;
+	width: calc(4rem * 3 + .2rem * 6);
+	display: inline-flex;
+	flex-wrap: wrap;
+	vertical-align: top;
 }
 
 .operator {
-    width: calc( 4rem + .2rem * 2 );
-    display: inline-block;
+	width: calc(4rem + .2rem * 2);
+	display: inline-block;
 }
