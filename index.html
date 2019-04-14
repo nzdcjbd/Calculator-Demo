@@ -13,33 +13,64 @@
 <body>
 	<div class="calculator">
 		<div class="showing">
-			<small class="calc">1+2</small>
-			<p class="ans">3</p>
+			<small class="calc"></small>
+			<p class="ans"></p>
 		</div>
 
 		<div class="number">
-			<button>7</button>
-			<button>8</button>
-			<button>9</button>
-			<button>4</button>
-			<button>5</button>
-			<button>6</button>
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button>0</button>
-			<button>.</button>
-			<button id="enter">=</button>
+			<button onclick="pushItem('7')">7</button>
+			<button onclick="pushItem('8')">8</button>
+			<button onclick="pushItem('9')">9</button>
+			<button onclick="pushItem('4')">4</button>
+			<button onclick="pushItem('5')">5</button>
+			<button onclick="pushItem('6')">6</button>
+			<button onclick="pushItem('1')">1</button>
+			<button onclick="pushItem('2')">2</button>
+			<button onclick="pushItem('3')">3</button>
+			<button onclick="pushItem('0')">0</button>
+			<button onclick="pushItem('.')">.</button>
+			<button onclick="calcAns()" id="enter">=</button>
 		</div>
 
 		<div class="operator">
-			<button>+</button>
-			<button>-</button>
-			<button>*</button>
-			<button>/</button>
+			<button onclick="pushItem('+')">+</button>
+			<button onclick="pushItem('-')">-</button>
+			<button onclick="pushItem('*')">*</button>
+			<button onclick="pushItem('/')">/</button>
 		</div>
 	</div>
 
+	<script>
+	var calc, ans;
+
+	function pushItem(key){
+
+		calc += key;
+
+		// show
+		document.getElementsByClassName('ans')[0].innerHTML = calc;
+	}
+
+	function calcAns() {
+		ans = eval(calc);
+
+		// show
+		document.getElementsByClassName('ans')[0].innerHTML = ans;
+		document.getElementsByClassName('calc')[0].innerHTML = calc;
+
+		// prepare next calc
+		calc = ans;
+	}
+
+	(function reset() {
+		calc = "";
+		ans = 0;
+
+		document.getElementsByClassName('ans')[0].innerHTML = 0;
+		document.getElementsByClassName('calc')[0].innerHTML = "";
+	})();
+	
+	</script>
 
 </body>
 
