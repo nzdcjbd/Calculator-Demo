@@ -40,36 +40,37 @@
 		</div>
 	</div>
 
+
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
-	var calc, ans;
+		var calc, ans;
 
-	function pushItem(key){
+		function pushItem(key) {
 
-		calc += key;
+			calc += key;
 
-		// show
-		document.getElementsByClassName('ans')[0].innerHTML = calc;
-	}
+			// show
+			$('.ans')[0].innerHTML = calc;
+		}
 
-	function calcAns() {
-		ans = eval(calc);
+		function calcAns() {
+			ans = eval(calc);
 
-		// show
-		document.getElementsByClassName('ans')[0].innerHTML = ans;
-		document.getElementsByClassName('calc')[0].innerHTML = calc;
+			// show
+			$('.ans')[0].innerHTML = ans;
+			$('.calc')[0].innerHTML = calc;
 
-		// prepare next calc
-		calc = ans;
-	}
+			// prepare next calc
+			calc = ans;
+		}
 
-	(function reset() {
-		calc = "";
-		ans = 0;
+		(function reset() {
+			calc = "";
+			ans = 0;
 
-		document.getElementsByClassName('ans')[0].innerHTML = 0;
-		document.getElementsByClassName('calc')[0].innerHTML = "";
-	})();
-	
+			$('.ans')[0].innerHTML = 0;
+			$('.calc')[0].innerHTML = "";
+		})();
 	</script>
 
 </body>
