@@ -63,6 +63,9 @@ button:hover {
 
 /* phone vertical */
 @media (max-width: 479px) {
+	h2 {
+		text-align: center;
+	}
 	.calculator {
 		width: 100vw;
 		position: absolute;
