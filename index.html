@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Calculator Demo</title>
-
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
-
 <body>
-	<h2>Calculator</h2>
-	<div class="calculator">
-		<div class="showing">
-			<small class="calc"></small>
-			<p class="ans"></p>
-		</div>
+    <style>
+        h2{
+            font-size: 16px;
+            font-weight: 700;
+            color: #f56969;
+        }
 
-		<div class="number">
-			<button onclick="pushItem('7')">7</button>
-			<button onclick="pushItem('8')">8</button>
-			<button onclick="pushItem('9')">9</button>
-			<button onclick="pushItem('4')">4</button>
-			<button onclick="pushItem('5')">5</button>
-			<button onclick="pushItem('6')">6</button>
-			<button onclick="pushItem('1')">1</button>
-			<button onclick="pushItem('2')">2</button>
-			<button onclick="pushItem('3')">3</button>
-			<button onclick="pushItem('0')">0</button>
-			<button onclick="pushItem('.')">.</button>
-			<button onclick="calcAns()" id="enter">=</button>
-		</div>
+        
+        .cal-button button{
+            border: none;
+            margin: 2px;
+            background-color: #cadef1;
+            padding: 10px;
+            font-size: 14px;
+            width: 34px;
+        }
 
-		<div class="operator">
-			<button onclick="pushItem('+')">+</button>
-			<button onclick="pushItem('-')">-</button>
-			<button onclick="pushItem('*')">*</button>
-			<button onclick="pushItem('/')">/</button>
-		</div>
-	</div>
+        #number {
+            border: 2px solid red;
+            width: 115px;
+        }
+    </style>
+    <h2>計算機</h2>
+    
+    <!-- 計算機本體 -->
+    <div> 
+        <!-- 顯示 -->
+        <div>
+            <!-- 運算式 -->
+            <p></p>
+            <!-- 運算結果 -->
+            <p></p>
+        </div>
 
+        <!-- 數字鍵 -->
+        <div id="number" class="cal-button">
+            <button>7</button><button>8</button><button>9</button><button>4</button><button>5</button><button>6</button><button>1</button><button>2</button><button>3</button><button>0</button><button>.</button><button>=</button>
+        </div>
 
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-	<script src="./assets/js/script.js"></script>
+        <!-- 運算鍵 -->
+        <div class="cal-button">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+        </div>
+
+    </div>
+
 
 </body>
-
 </html>
