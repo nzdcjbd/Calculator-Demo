@@ -1,0 +1,61 @@
+＃日誌
+日誌
+* .log
+npm-debug.log *
+yarn-debug.log *
+yarn-error.log *
+
+＃運行時數據
+的PID
+* .pid
+* .seed
+* .pid.lock
+
+＃由jscoverage / JSCover產生儀表庫目錄
+LIB-COV
+
+＃像istanbul這樣的工具使用的覆蓋目錄
+覆蓋
+
+＃ NYC測試覆蓋
+.nyc_output
+
+＃咕嚕中間存儲（http://gruntjs.com/creating-plugins#storing-task-files）
+.grunt
+
+＃鮑爾依賴目錄（https://bower.io/）
+bower_components
+
+# node-waf配置
+.lock-WScript的
+
+＃編譯二進制插件（https://nodejs.org/api/addons.html）
+構建 / 發布
+
+＃依賴目錄
+node_modules /
+jspm_packages /
+
+＃打字稿V1申報文件
+打字 /
+
+＃可選npm緩存目錄
+.npm
+
+＃可選的eslint緩存
+.eslintcache
+
+＃可選的REPL歷史記錄
+.node_repl_history
+
+# 'npm pack'的輸出
+* .tgz
+
+＃紗誠信檔案
+.yarn完整性
+
+＃ dotenv環境變量文件
+.ENV
+
+＃ next.js構建輸出
+。下一個
